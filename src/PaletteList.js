@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import MiniPalette from "./MiniPalette";
 import { withStyles } from "@material-ui/styles";
 import { withRouter } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 const styles = {
   root: {

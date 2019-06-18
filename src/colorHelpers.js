@@ -12,7 +12,7 @@ function generatePalette(starterPalette) {
     newPalette.colors[level] = [];
   }
   for (let color of starterPalette.colors) {
-    let scale = generateScale(color.color, 10).reverse();
+    let scale = getScale(color.color, 10).reverse();
     for (let i in scale) {
       newPalette.colors[levels[i]].push({
         name: `${color.name} ${levels[i]}`,
@@ -28,19 +28,18 @@ function generatePalette(starterPalette) {
   }
   return newPalette;
 }
-
 function getRange(hexColor) {
-  const endColor = "#fff";
+  const end = "#fff";
   return [
     chroma(hexColor)
       .darken(1.4)
       .hex(),
     hexColor,
-    endColor
+    end
   ];
 }
 
-function generateScale(hexColor, numberOfColors) {
+function getScale(hexColor, numberOfColors) {
   return chroma
     .scale(getRange(hexColor))
     .mode("lab")
