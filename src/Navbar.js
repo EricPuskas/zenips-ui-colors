@@ -53,7 +53,7 @@ class Navbar extends Component {
           </Select>
         </div>
         <Snackbar
-          anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+          anchorOrigin={{ vertical: "top", horizontal: "right" }}
           open={this.state.open}
           autoHideDuration={3000}
           onClose={this.closeSnackbar}
