@@ -31,6 +31,7 @@ class Palette extends Component {
         background={c[format]}
         name={c.name}
         moreURL={`/palette/${id}/${c.id}`}
+        showLink
       />
     ));
     return (
