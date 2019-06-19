@@ -1,13 +1,13 @@
-.Palette {
+/* .Palette {
   display: flex;
   flex-direction: column;
   height: 100vh;
   overflow: hidden;
-}
+} */
 
-.Palette-colors {
+/* .Palette-colors {
   height: 90%;
-}
+} */
 
 .Palette-footer {
   background-color: #fff;
