@@ -6,17 +6,31 @@ import { generatePalette } from "./colorHelpers";
 import PaletteList from "./PaletteList";
 import SingleColorPalette from "./SingleColorPalette";
 import NewPaletteForm from "./NewPaletteForm";
-const savedPalettes = JSON.parse(window.localStorage.getItem("palettes"));
 class App extends Component {
-  state = {
-    palettes: savedPalettes || seedColors
-  };
+  constructor(props) {
+    super(props);
+    const savedPalettes = JSON.parse(window.localStorage.getItem("palettes"));
+    console.log(savedPalettes);
+    console.log(seedColors);
+    this.state = {
+      palettes: savedPalettes.length > 0 ? savedPalettes : seedColors
+    };
+  }
+
   findPalette = id => {
     return this.state.palettes.find(palette => {
       return palette.id === id;
     });
   };
 
+  deletePalette = id => {
+    this.setState(
+      st => ({
+        palettes: st.palettes.filter(palette => palette.id !== id)
+      }),
+      this.syncLocalStorage
+    );
+  };
   savePalette = newPalette => {
     this.setState(
       { palettes: [...this.state.palettes, newPalette] },
@@ -60,7 +74,12 @@ class App extends Component {
         <Route
           path="/"
           exact
-          render={() => <PaletteList palettes={this.state.palettes} />}
+          render={() => (
+            <PaletteList
+              palettes={this.state.palettes}
+              deletePalette={this.deletePalette}
+            />
+          )}
         />
         <Route
           exact
