@@ -6,11 +6,11 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
 import PaletteMetaForm from "./PaletteMetaForm";
 import styles from "./styles/PaletteFormNavStyles";
+import PaletteOutlined from "@material-ui/icons/PaletteOutlined";
 
 class PaletteFormNav extends Component {
   constructor(props) {
@@ -55,9 +55,11 @@ class PaletteFormNav extends Component {
               color="inherit"
               aria-label="Open drawer"
               onClick={handleDrawerOpen}
-              className={classNames(classes.menuButton, open && classes.hide)}
+              className={classNames(classes.menuButton, {
+                [classes.hide]: open
+              })}
             >
-              <MenuIcon />
+              <PaletteOutlined />
             </IconButton>
             <Typography variant="h6" color="inherit" noWrap>
               Create a Palette
