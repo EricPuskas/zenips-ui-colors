@@ -33,7 +33,7 @@ class Navbar extends Component {
     return (
       <nav className={classes.Navbar}>
         <div className={classes.logo}>
-          <Link to="/">Zenips UI Colors</Link>
+          <Link to="/">ZenipsUIColors</Link>
         </div>
         {showSlider && (
           <div>
