@@ -15,8 +15,14 @@ class PaletteList extends Component {
       <div className={classes.root}>
         <div className={classes.container}>
           <nav className={classes.nav}>
-            <h1> ZenipsUIColors </h1>
-            <Link to="/palette/new">Create Palette </Link>
+            <div>
+              <h1 className={classes.heading}> ZenipsUIColors </h1>
+            </div>
+            <h3>
+              <Link to="/palette/new" className={classes.create}>
+                Create Palette
+              </Link>
+            </h3>
           </nav>
           <div className={classes.palettes}>
             {palettes.map((palette, index) => (
