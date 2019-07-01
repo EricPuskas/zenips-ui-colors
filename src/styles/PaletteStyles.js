@@ -1,9 +1,11 @@
+import sizes from "./sizes";
 export default {
   Palette: {
     display: "flex",
     flexDirection: "column",
     height: "100vh",
-    overflow: "hidden"
+    overflowY: "scroll",
+    overflowX: "hidden"
   },
   colors: {
     height: "90%"
@@ -35,6 +37,18 @@ export default {
       textTransform: "uppercase",
       border: "none",
       TextDecoration: "none"
+    },
+    [sizes.down("lg")]: {
+      width: "25%",
+      height: "33.3333%"
+    },
+    [sizes.down("md")]: {
+      width: "50%",
+      height: "20%"
+    },
+    [sizes.down("xs")]: {
+      width: "100%",
+      height: "10%"
     }
   }
 };
