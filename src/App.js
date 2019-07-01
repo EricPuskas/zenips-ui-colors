@@ -10,8 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     const savedPalettes = JSON.parse(window.localStorage.getItem("palettes"));
-    console.log(savedPalettes);
-    console.log(seedColors);
+
     this.state = {
       palettes: savedPalettes.length > 0 ? savedPalettes : seedColors
     };
