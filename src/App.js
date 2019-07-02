@@ -15,7 +15,7 @@ class App extends Component {
     const savedPalettes = JSON.parse(window.localStorage.getItem("palettes"));
 
     this.state = {
-      palettes: savedPalettes.length > 0 ? savedPalettes : seedColors
+      palettes: savedPalettes !== null ? savedPalettes : seedColors
     };
   }
 
