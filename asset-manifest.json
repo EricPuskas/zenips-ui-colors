@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/zenips-ui-colors/static/css/main.e964a052.chunk.css",
+    "main.js": "/zenips-ui-colors/static/js/main.dc70c7a8.chunk.js",
+    "main.js.map": "/zenips-ui-colors/static/js/main.dc70c7a8.chunk.js.map",
+    "runtime~main.js": "/zenips-ui-colors/static/js/runtime~main.ec73cb27.js",
+    "runtime~main.js.map": "/zenips-ui-colors/static/js/runtime~main.ec73cb27.js.map",
+    "static/css/2.e337d257.chunk.css": "/zenips-ui-colors/static/css/2.e337d257.chunk.css",
+    "static/js/2.23b71ca6.chunk.js": "/zenips-ui-colors/static/js/2.23b71ca6.chunk.js",
+    "static/js/2.23b71ca6.chunk.js.map": "/zenips-ui-colors/static/js/2.23b71ca6.chunk.js.map",
+    "index.html": "/zenips-ui-colors/index.html",
+    "precache-manifest.d01cc9a1c3d6ba6468ae33aa5ee4720e.js": "/zenips-ui-colors/precache-manifest.d01cc9a1c3d6ba6468ae33aa5ee4720e.js",
+    "service-worker.js": "/zenips-ui-colors/service-worker.js",
+    "static/css/2.e337d257.chunk.css.map": "/zenips-ui-colors/static/css/2.e337d257.chunk.css.map",
+    "static/css/main.e964a052.chunk.css.map": "/zenips-ui-colors/static/css/main.e964a052.chunk.css.map",
+    "static/media/bg.svg": "/zenips-ui-colors/static/media/bg.26e58f94.svg"
+  }
+}
