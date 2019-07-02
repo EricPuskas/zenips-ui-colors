@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/zenips-ui-colors/precache-manifest.fb20372df14a7a08e794c592fc7cb6bf.js"
+  "/zenips-ui-colors/precache-manifest.2e052e5b6bb76f86bc7dcfd44621c653.js"
 );
 
 self.addEventListener('message', (event) => {

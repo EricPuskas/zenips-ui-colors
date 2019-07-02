@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e673c0590e552c27d8f86ca12f6d0caa",
+    "revision": "8dce9c0c3144544b6c746b3309c81cb5",
     "url": "/zenips-ui-colors/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zenips-ui-colors/static/css/2.e337d257.chunk.css"
   },
   {
-    "revision": "b31550b1485ce44a848f",
+    "revision": "0a2897da62874a0fe4a4",
     "url": "/zenips-ui-colors/static/css/main.1a8bd2b9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zenips-ui-colors/static/js/2.23b71ca6.chunk.js"
   },
   {
-    "revision": "b31550b1485ce44a848f",
-    "url": "/zenips-ui-colors/static/js/main.22935f18.chunk.js"
+    "revision": "0a2897da62874a0fe4a4",
+    "url": "/zenips-ui-colors/static/js/main.019d062d.chunk.js"
   },
   {
     "revision": "ba05bb8ad5db9557d568",
