@@ -1,5 +1,6 @@
 {
   "name": "zenips-ui-colors",
+  "homepage": "https://ericpuskas.github.io/zenips-ui-colors",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,7 @@
     "@material-ui/styles": "^4.1.1",
     "chroma-js": "^2.0.4",
     "emoji-mart": "^2.11.1",
+    "gh-pages": "^2.0.1",
     "rc-slider": "^8.6.13",
     "react": "^16.8.6",
     "react-color": "^2.17.3",
@@ -21,6 +23,8 @@
     "react-transition-group": "^4.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
